@@ -23,7 +23,7 @@ except ImportError:
 
 kwargs = {}
 
-version = "0.1.0"
+version = "0.1.2"
 
 if setuptools is not None:
     # If setuptools is not available, please on your own for dependencies.

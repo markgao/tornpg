@@ -40,7 +40,7 @@ except ImportError:
         raise
 
 version = "0.1"
-version_info = (0, 1, 0, 0)
+version_info = (0, 1, 2, 0)
 
 psycopg2.extensions.register_type(psycopg2.extensions.UNICODE)
 
@@ -167,7 +167,7 @@ class Connection(object):
         cursor = self._cursor()
         try:
             self._execute(cursor, query, parameters, kwparameters)
-            return cursor.lastrowid
+            return cursor.fetchone()[0]
         finally:
             cursor.close()
 

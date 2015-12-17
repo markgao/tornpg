@@ -2,8 +2,9 @@
 *.pyo
 *~
 .DS_Store
-/build/
-/dist/
+tornpg.egg-info/
+build/
+dist/
 .tox/
 MANIFEST
 doc/build/
